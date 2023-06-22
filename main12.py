@@ -12,7 +12,12 @@ import sys
 import os
 import webbrowser
 from tkinter import Scrollbar
+import pathlib
 
+HERE = pathlib.Path(__file__)
+parent = HERE.parent
+print(HERE)
+print(str(parent))
 
 def resource_path(relative_path):
     """ Get absolute path to resource, works for dev and for PyInstaller """
